@@ -6,8 +6,8 @@ const app = express();
 app.use(express.json());
 app.use(cors({ origin: true }));
 
-const CHAT_ENGINE_PROJECT_ID = "21872957-f175-49c0-ba4a-9cf5074093eb";
-const CHAT_ENGINE_PRIVATE_KEY = "fe12f357-6cea-40ce-b6c5-cc798af1aa1b";
+const CHAT_ENGINE_PROJECT_ID = "1e96ab0a-2459-49c8-b77d-5c7d66825bec";
+const CHAT_ENGINE_PRIVATE_KEY = "a7d86670-6fb1-4f68-891e-291d4d29c729";
 
 app.post("/signup", async (req, res) => {
   const { username, secret, email, first_name, last_name } = req.body;
